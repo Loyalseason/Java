@@ -40,8 +40,11 @@ public class VariableArgument {
 //		showList("John", "Smith", "Ama");
 		
 		
-        System.out.println(max(1, 2, 3, 4 , 5 , 20));
+//      System.out.println(max(1, 2, 3, 4 , 5 , 20));
 		
 		System.out.println(sum(1, 2, 3, 4, 5));
+		
+		
+		
 	}
 }
