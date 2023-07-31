@@ -4,7 +4,7 @@ class Circle{
 	
 	// Properties
 	double radius;
-	
+	 
 	
 	
 	// Methods
