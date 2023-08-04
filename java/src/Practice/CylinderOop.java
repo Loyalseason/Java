@@ -46,7 +46,6 @@ public class CylinderOop {
 		c1.setRadius(12);
 		c1.getHeight();
 		c1.getRadius();
-		
 		System.out.println();
 		c1.setDimensions(23.7, 25.6);
 		System.out.println(c1.getDimensions());
