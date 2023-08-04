@@ -1,7 +1,8 @@
 package Practice;
 
 class Product{
-	int itemNo = 0;
+	private static int totalItems = 0;
+	int itemNo;
 	String name;
 	double price;
 	int qty;
@@ -11,7 +12,8 @@ class Product{
 		this.price = price;
 		this.qty = qty;
 		
-		itemNo++;  
+		totalItems++;  
+		itemNo = totalItems;
 	}
 	
 
@@ -54,6 +56,16 @@ public class Product_Customer {
 	        System.out.println("Total: " + p1.total());
 	        
 	        System.out.println(p1.showData());
+	        System.out.println();
+			Product p2 = new Product("Coke", 5.7, 5);
+			
+		    System.out.println("Name: " + p2.setName());
+	        System.out.println("Price: " + p2.setPrice());
+	        System.out.println("Quantity: " + p2.setQty());
+	        System.out.println("Total: " + p2.total());
+	        
+	        System.out.println(p2.showData());
+		
 		
 	}
 
