@@ -1,23 +1,27 @@
 package Practice;
 
-//  1,2,3,5,7,11
-
 public class FindAPrimeNumber { 
- 
-	static int primenum(int a) {
-           for(int i = 2; i <= a/2; i++) {
-        	   if(a % i == 0) 
-        		   return i; 
-           }
-           return a;  
-             
-	}
-	
-	public static void main(String[] Args) {
-		
-		
-		int a = 1;
-		System.out.println(primenum(a)); 
-		
-	}
+    static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false; 
+            }
+        }
+        return true; 
+    }
+    
+    public static void main(String[] args) {
+        int num = 8;
+            
+       if( isPrime(num) == true) {
+    	   System.out.println(num + " is a prime number");
+       }
+       else {
+    	   System.out.println(num + " is not a prime number");
+       }
+    }
 }
