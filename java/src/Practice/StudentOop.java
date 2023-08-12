@@ -1,5 +1,5 @@
 package Practice;
-class Student{
+class Student0{
 	public int rollNo;
 	public String name;
 	public String course;
@@ -40,7 +40,7 @@ class Student{
 public class StudentOop {
 
 	public static void main(String []Args) {
-		Student s1  = new Student();
+		Student0 s1  = new Student0();
 		s1.rollNo = 1;
 		s1.name = "Mac Jay";
 		s1.course = "Business Admin";
