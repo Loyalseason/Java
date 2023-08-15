@@ -55,6 +55,10 @@ class Account{
 	public double getBalance() {
 		return balance;
 	}
+	
+	protected double currBalance(double amount) {
+		return balance += amount;
+	}
 
 	@Override 
 	public String toString() {
@@ -65,6 +69,8 @@ class Account{
 
 class SavingsAccount extends Account{
 	double currentBalance;
+	
+
 	SavingsAccount(String accName, String address, String phone, String emailID, double balance) {
 		super(accName, address, phone, emailID, balance);
 	}
@@ -130,5 +136,8 @@ public class Student_Bank_Account {
 		LoanAccount la = new LoanAccount(acc1.getAccName(), acc1.getAddress(), acc1.getPhone(), acc1.getEmailID(), acc1.getBalance());
 	   System.out.println("\nYour eligibility for a loan is " + la.legibility());
 		
+	   
+	   
+	   //There is an something i need to understand here
 	}
 }
