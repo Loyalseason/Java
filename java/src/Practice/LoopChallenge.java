@@ -61,17 +61,18 @@ public class LoopChallenge {
 		
 //Factorial of numbers using loops
 		
-		Scanner input = new Scanner(System.in);
-		int num;
-		System.out.println("Enter a number to find the factorial");
-		num = input.nextInt();
-		
-		int total = 1;
-       for(int i = 1; i <= num; i++) {
-    	   System.out.println(i +" * "+total + " = " + (i * total));  
-    	   total *= i;
-    	   
-       } 
+		try (Scanner input = new Scanner(System.in)) {
+			int num;
+			System.out.println("Enter a number to find the factorial");
+			num = input.nextInt();
+			
+			int total = 1;
+      for(int i = 1; i <= num; i++) {
+			   System.out.println(i +" * "+total + " = " + (i * total));  
+			   total *= i;
+			   
+      }
+		} 
        
 	}
 	
