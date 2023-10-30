@@ -35,7 +35,8 @@ public final class InheritanceAndConstructors {
 	public static void main(String[] args) {
 	
 		Cuboid c = new Cuboid(10);
-		System.out.println(c.volume());
+		Rectangle c1 = new Cuboid(10);
+ 		System.out.println(c1.length);
 
 	}
 
